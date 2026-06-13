@@ -7,24 +7,36 @@
   <title>CodeClub Waghaeusel – code with us!</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script src="scripts/countdown.js"></script>
 
 <body>
 
   <!-- NAV -->
   <nav>
     <div class="nav-l">
-      <img src="images/Logo_196x196.webp" alt="CodeClub Waghäusel Logo" class="nav-logo"
-        style="width:44px;height:44px;object-fit:contain;">
-      <span class="nav-title">Code<em>Club</em> Waghäusel</span>
+      <img src="images/codewithus.webp" alt="Code Club Waghäusel Logo" class="nav-logo">
+      <span class="nav-title">Code <em>Club</em> Waghäusel</span>
     </div>
     <div class="nav-links">
       <a href="#ueber">Über uns</a>
       <a href="#eltern">Eltern</a>
       <a href="#mentoren">Mentoren</a>
-      <a href="#termin">Termine</a>
+      <a href="medien/Code_Club_Ferienkalender.pdf">Termine</a>
       <a href="mailto:codewithus@codeclub-jph.rocks">Mitmachen</a>
     </div>
   </nav>
+
+  <!-- COUNTDOWN -->
+  <div class="countdown-banner">
+    <span>🗓️ Der Code Club Waghäusel befindet sich aktuell im Aufbau und startet in:</span>
+    <div class="countdown-timer">
+      <div class="countdown-unit"><span id="cd-days">--</span><small>Tage</small></div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit"><span id="cd-hours">--</span><small>Std</small></div>
+      <div class="countdown-sep">:</div>
+      <div class="countdown-unit"><span id="cd-mins">--</span><small>Min</small></div>
+    </div>
+  </div>
 
   <!-- HERO -->
   <div class="hero">
@@ -34,7 +46,7 @@
       <span class="f">🐍</span><span class="f">🎮</span><span class="f">def</span><span class="f">##</span>
     </div>
     <div class="hero-inner">
-      <img src="images/Logo_196x196.webp" alt="CodeClub Waghäusel Logo" class="hero-logo" style="object-fit:contain;">
+      <img src="images/Logo_196x196.webp" alt="Code Club Waghäusel Logo" class="hero-logo" style="object-fit:contain;">
 
       <h1>Du bist zwischen <mark>11 und 17 Jahren</mark> und hast <mark>Bock</mark>, das <mark>Programmieren zu
           lernen</mark> oder Deine eigenen <mark>Ideen</mark> und <mark>Projekte</mark> umzusetzen?</h1>
@@ -44,8 +56,6 @@
       </div>
     </div>
   </div>
-
-
 
   <!-- MENTOR BANNER -->
   <div class="mentor-banner">
@@ -67,9 +77,9 @@
           <div class="a-icon">🎁</div>
           <h3>Was bekommst Du</h3>
           <ul>
-            <li>Raum, um Deine eigenen Ideen in die Tat umzusetzen</li>
-            <li>Professionelle Unterstützung</li>
             <li>Strukturierten Einstieg in die Welt der Programmierung</li>
+            <li>Professionelle Unterstützung</li>
+            <li>Raum, um Deine eigenen Ideen in die Tat umzusetzen</li>
             <li>Top-Ausstattung</li>
           </ul>
         </div>
@@ -78,7 +88,8 @@
           <h3>Was brauchst Du</h3>
           <ul>
             <li>Viel Lust, Zeit, Kreativität und Ausdauer</li>
-            <li>Deinen eigenen Rechner</li>
+            <li>Deinen eigenen Rechner, wenn Du einen Besitzt</li>
+            <li>Wenn Du keinen Rechner besitzt kannst Du dir für die Arbeit vor ort ein Gerät ausleihen</li>
           </ul>
         </div>
         <div class="a-card">
@@ -102,33 +113,33 @@
       </p>
       <div class="t-grid">
         <div class="t-card tc1">
-          <span class="t-icon">🐱</span>
+          <img src="images/scratch-logo.png" alt="Scratch" class="t-icon">
           <h3>Scratch</h3>
           <p>Visuelles Programmieren – ideal für den Start</p>
           <span class="t-badge">Einsteiger</span>
         </div>
         <div class="t-card tc2">
-          <span class="t-icon">🐍</span>
+          <img src="images/python-logo.png" alt="Python" class="t-icon">
           <h3>Python</h3>
           <p>Echte Programmiersprache für Fortgeschrittene</p>
           <span class="t-badge">Fortgeschrittene</span>
         </div>
         <div class="t-card tc3">
-          <span class="t-icon">⚡</span>
+          <img src="images/arduino-logo.png" alt="Arduino" class="t-icon">
           <h3>Arduino</h3>
           <p>Mikrocontroller &amp; Elektronikprojekte bauen</p>
           <span class="t-badge">Hardware</span>
         </div>
         <div class="t-card tc4">
-          <span class="t-icon">⚙️</span>
+          <img src="images/fischertechnik-sauggreifer.jpg" alt="Fischertechnik" class="t-icon">
           <h3>Fischertechnik</h3>
-          <p>Mechanik konstruieren und steuern</p>
+          <p>Mechanik <br> konstruieren und steuern</p>
           <span class="t-badge">Hardware</span>
         </div>
         <div class="t-card tc5">
-          <span class="t-icon">🤖</span>
+          <img src="images/GoPiGo.png" alt="GoPiGo" class="t-icon">
           <h3>GoPiGo</h3>
-          <p>Raspberry-Pi-Roboter bauen und steuern</p>
+          <p>Raspberry-Pi <br>Roboter bauen und steuern</p>
           <span class="t-badge">Robotik</span>
         </div>
       </div>
@@ -142,13 +153,13 @@
       <div class="w-grid">
         <div class="w-card">
           <h3>📅 Unsere Treffen</h3>
-          <div class="w-row"><span class="wi">🗓️</span><span>Alle 2 Wochen, immer Donnerstags<br><small
+          <div class="w-row"><span class="wi">🗓️</span><span>Alle 2 Wochen, immer Montags<br><small
                 style="color:var(--muted)">(die genauen Termine können dem Terminplan entnommen werden)</small></span>
           </div>
           <div class="w-row"><span class="wi">🕕</span><span>Start: <strong>18:00 Uhr</strong></span></div>
           <div class="w-row"><span class="wi">⏱️</span><span>Dauer: <strong>2 Stunden</strong> – mit offenem Ende</span>
           </div>
-          <div class="w-row"><span class="wi">💰</span><span>Eintritt: <strong>100% kostenlos!</strong></span></div>
+          <div class="w-row"><span class="wi">💰</span><span>Eintritt: <strong>kostenlos!</strong></span></div>
         </div>
         <div class="w-card">
           <h3>📍 Unser Standort</h3>
@@ -194,7 +205,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 CodeClub Waghäusel &nbsp;·&nbsp;
+    <p>© 2026 CodeClub Waghäusel &nbsp;·&nbsp;
       <a href="mailto:codewithus@codeclub-jph.rocks">codewithus@codeclub-jph.rocks</a> &nbsp;·&nbsp;
       Teil des weltweiten <a href="https://codeclub.org" target="_blank">Code Club</a>-Netzwerks der
       <a href="https://www.raspberrypi.org" target="_blank">Raspberry Pi Foundation</a>
