@@ -96,6 +96,15 @@
         text-align: center;
     }
 
+    .hero-small {
+        background: #0d1b4a;
+        padding: 0.5rem 0rem 0.5rem;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+
     .floats {
         position: absolute;
         inset: 0;
@@ -215,7 +224,6 @@
         font-weight: 700;
         color: white;
         line-height: 1.25;
-        /*margin-bottom: 2rem;*/
         margin-top: 6px;
     }
 
@@ -224,14 +232,6 @@
         background: none;
     }
 
-    /*    .hero p {
-        font-size: 1.1rem;
-        color: rgba(255, 255, 255, .82);
-        margin-bottom: 2rem;
-        max-width: 540px;
-        margin-inline: auto;
-    }
-*/
     .hero-btns {
         display: flex;
         gap: .9rem;
@@ -385,7 +385,7 @@
     .about-lead {
         color: var(--muted);
         margin-bottom: 1.5rem;
-        max-width: 620px;
+        max-width: 880px;
     }
 
     .about-lead a {
@@ -395,7 +395,8 @@
 
     .a-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        /*grid-template-columns: 1fr 1fr 1fr;*/
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.1rem;
     }
 
@@ -675,6 +676,10 @@
         background: var(--bg);
     }
 
+    .contact2 {
+        background: white;
+    }
+
     .c-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -856,4 +861,26 @@
         font-weight: 900;
         color: var(--yellow);
         margin-bottom: .8rem;
+    }
+
+    /*PAGE TITLE*/
+    .page-title {
+        background: #0d1b4a;
+        padding: 1rem 2rem 1rem;
+        /*        position: relative;
+        overflow: hidden;*/
+        display: flex;
+        text-align: left;
+        align-items: center;
+        gap: .9rem;
+    }
+
+    /*MENTOREN*/
+    .mentoren {
+        background: white;
+    }
+
+    /*ONBOARDING*/
+    .onboarding {
+        background: var(--bg);
     }
