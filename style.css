@@ -273,17 +273,6 @@
         background: rgba(255, 255, 255, .2);
     }
 
-    /* ── WAVE ── */
-    .wave {
-        line-height: 0;
-        margin-top: -1px;
-    }
-
-    .wave svg {
-        display: block;
-        width: 100%;
-    }
-
     /* ── STATS ── */
     .stats {
         background: white;
@@ -317,13 +306,20 @@
 
     /* ── SECTIONS ── */
     .sec {
-        padding: 3.2rem 2rem;
+        padding: 2.5rem 2rem;
     }
 
     .sec-in {
         max-width: 880px;
         margin: 0 auto;
     }
+
+    .sec-in p mark {
+        color: var(--maroon);
+        background: none;
+        font-weight: 600;
+    }
+
 
     h2.stitle {
         font-size: 1.7rem;
@@ -341,6 +337,24 @@
         margin-top: 5px;
         background: linear-gradient(90deg, var(--yellow), var(--orange));
     }
+
+    h3.stitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 1.1rem;
+        position: relative;
+    }
+
+    h3.stitle::after {
+        content: '';
+        display: block;
+        height: 2px;
+        border-radius: 1px;
+        margin-top: 1px;
+        background: linear-gradient(90deg, var(--yellow), var(--orange));
+    }
+
 
     /* ── MENTOR BANNER ── */
     .mentor-banner {
@@ -378,10 +392,6 @@
     }
 
     /* ── ABOUT ── */
-    .about {
-        background: white;
-    }
-
     .about-lead {
         color: var(--muted);
         margin-bottom: 1.5rem;
@@ -454,10 +464,6 @@
     }
 
     /* ── TOPICS ── */
-    .topics {
-        background: var(--bg);
-    }
-
     .t-sub {
         color: var(--muted);
         margin-bottom: 1.3rem;
@@ -616,11 +622,6 @@
         margin-top: .15rem;
     }
 
-
-    .when {
-        background: white;
-    }
-
     .w-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -672,14 +673,6 @@
     }
 
     /* ── CONTACT ── */
-    .contact {
-        background: var(--bg);
-    }
-
-    .contact2 {
-        background: white;
-    }
-
     .c-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -689,7 +682,7 @@
 
     .c-lead {
         color: var(--muted);
-        margin-bottom: 1.3rem;
+        margin-bottom: 1rem;
         font-size: .97rem;
     }
 
@@ -867,20 +860,17 @@
     .page-title {
         background: #0d1b4a;
         padding: 1rem 2rem 1rem;
-        /*        position: relative;
-        overflow: hidden;*/
         display: flex;
         text-align: left;
         align-items: center;
         gap: .9rem;
     }
 
-    /*MENTOREN*/
-    .mentoren {
+    /*TEXT  BACKGROUND*/
+    .bg_white {
         background: white;
     }
 
-    /*ONBOARDING*/
-    .onboarding {
+    .bg_light_grey {
         background: var(--bg);
     }

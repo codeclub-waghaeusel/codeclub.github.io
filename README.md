@@ -1,4 +1,4 @@
-# Webseite des CodeClub Waghäusel
+# Webseite des Code Club Waghäusel
 
 **Hinweis: Der Code Club Waghäusel befindet sich im Aufbau und startet im Herbst 2026**
 
