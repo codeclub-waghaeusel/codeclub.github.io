@@ -320,6 +320,23 @@
         font-weight: 600;
     }
 
+    h1.stitle {
+        font-size: 2rem;
+        font-weight: 900;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    h1.stitle::after {
+        content: '';
+        display: block;
+        height: 4px;
+        border-radius: 2px;
+        margin-top: 5px;
+        background: linear-gradient(90deg, var(--yellow), var(--orange));
+    }
+
 
     h2.stitle {
         font-size: 1.7rem;
