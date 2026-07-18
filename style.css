@@ -391,14 +391,14 @@
         text-decoration: none;
     }
 
-    /* ── ABOUT ── */
-    .about-lead {
+    /* ── TEXT ── */
+    .default-paragraph {
         color: var(--muted);
         margin-bottom: 1.5rem;
         max-width: 880px;
     }
 
-    .about-lead a {
+    .default-paragraph a {
         color: var(--maroon);
         font-weight: 700;
     }
@@ -874,3 +874,22 @@
     .bg_light_grey {
         background: var(--bg);
     }
+
+    /*LISTS*/
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    color: var(--muted);
+    padding: 0.3rem 0 0.3rem 1.2rem;
+    position: relative;
+}
+
+ul li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #0077cc;
+}

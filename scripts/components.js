@@ -76,10 +76,12 @@ class SiteFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
       <footer>
-        <p>© 2025 CodeClub Waghäusel &nbsp;·&nbsp;
+        <p>© 2026 CodeClub Waghäusel &nbsp;·&nbsp;
            <a href="mailto:codewithus@codeclub-jph.rocks">
              codewithus@codeclub-jph.rocks
            </a> &nbsp;·&nbsp;
+           <a href="datenschutz.html">Datenschutz</a> &nbsp;·&nbsp;
+           <a href="impressum.html">Impressum</a> &nbsp;·&nbsp;
            Teil des weltweiten 
            <a href="https://codeclub.org" target="_blank">Code Club</a>-Netzwerks 
            der <a href="https://www.raspberrypi.org" target="_blank">
