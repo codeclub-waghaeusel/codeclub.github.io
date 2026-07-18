@@ -9,6 +9,9 @@ class SiteNav extends HTMLElement {
             </a>
             <span class="nav-title">Code <em>Club</em> Waghäusel</span>
             </div>
+            <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <div class="nav-links">
             <a href="ueber.html">Über uns</a>
             <a href="eltern.html">Eltern</a>
@@ -17,11 +20,19 @@ class SiteNav extends HTMLElement {
             <a href="mailto:codewithus@codeclub-jph.rocks?subject=Ich%20m%C3%B6chte%20beim%20Code%20Club%20Wagh%C3%A4usel%20dabei%20sein">Mitmachen</a>
             </div>
         </nav>`;
+
         const links = this.querySelectorAll(".nav-links a");
         links.forEach((a) => {
             if (a.href === window.location.href) {
                 a.style.color = "var(--yellow)";
             }
+        });
+
+        const toggle = this.querySelector(".nav-toggle");
+        const navLinks = this.querySelector(".nav-links");
+        toggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("open");
+            toggle.setAttribute("aria-expanded", isOpen);
         });
     }
 }

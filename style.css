@@ -34,6 +34,7 @@
         color: var(--maroon);
     }
 
+    /*NAVIGATION*/
     nav {
         background: var(--maroon);
         padding: .6rem 2rem;
@@ -86,6 +87,23 @@
     .nav-links a:hover {
         color: var(--yellow);
     }
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
 
     /* ── HERO ── */
     .hero {
@@ -808,22 +826,37 @@
         color: white;
     }
 
-    @media(max-width:640px) {
-        .nav-links {
-            display: none
-        }
-
-        .a-grid,
-        .w-grid,
-        .c-grid {
-            grid-template-columns: 1fr
-        }
-
-        .stats {
-            gap: 1.4rem
-        }
+ @media(max-width:640px) {
+    .nav-toggle {
+        display: flex;
     }
 
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--maroon);
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .a-grid,
+    .w-grid,
+    .c-grid {
+        grid-template-columns: 1fr
+    }
+
+    .stats {
+        gap: 1.4rem
+    }
+}
     .countdown-banner {
         background: linear-gradient(90deg, var(--blue), var(--purple));
         color: white;
