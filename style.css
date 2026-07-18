@@ -479,7 +479,7 @@
 
     .a-card ul {
         list-style: none;
-        padding: 0;
+        padding:0;
         margin: 0;
     }
 
@@ -926,18 +926,18 @@
     }
 
     /*LISTS*/
-ul {
+.default-paragraph + ul {
     list-style: none;
     padding-left: 0;
 }
 
-ul li {
+.default-paragraph + ul li {
     color: var(--muted);
     padding: 0.3rem 0 0.3rem 1.2rem;
     position: relative;
 }
 
-ul li::before {
+.default-paragraph + ul li::before {
     content: "-";
     position: absolute;
     left: 0;
